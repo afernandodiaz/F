@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Controladores.RegistroProductoActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Registrar Productos"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtProdNom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="Nombre"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColorHint="#757575"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.147"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/txtProdCan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="Cantidad"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:textColorHint="#757575"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintHorizontal_bias="0.147"
+        app:layout_constraintEnd_toEndOf="@+id/txtProdNom"
+        app:layout_constraintStart_toStartOf="@+id/txtProdNom"
+        app:layout_constraintTop_toBottomOf="@+id/txtProdNom" />
+
+    <EditText
+        android:id="@+id/txtProdPres"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:hint="Presentación"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:textColorHint="#757575"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="379dp"
+        app:layout_constraintHorizontal_bias="0.147"
+        app:layout_constraintEnd_toEndOf="@+id/txtProdCan"
+        app:layout_constraintStart_toStartOf="@+id/txtProdCan"
+        app:layout_constraintTop_toBottomOf="@+id/txtProdCan"/>
+
+    <EditText
+        android:id="@+id/txtProdPrec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="Precio"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:textColorHint="#757575"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintHorizontal_bias="0.147"
+        app:layout_constraintEnd_toEndOf="@+id/txtProdPres"
+        app:layout_constraintStart_toStartOf="@+id/txtProdPres"
+        app:layout_constraintTop_toBottomOf="@+id/txtProdPres" />
+
+    <Spinner
+        android:id="@+id/Cat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/txtProdPrec"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="@+id/txtProdPrec"
+        app:layout_constraintTop_toBottomOf="@+id/txtProdPrec" />
+
+    <Button
+        android:id="@+id/btnRegProd"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:text="Registrar"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/Cat"
+        app:layout_constraintStart_toStartOf="@+id/Cat"
+        app:layout_constraintTop_toBottomOf="@+id/Cat" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
